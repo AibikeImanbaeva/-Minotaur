@@ -1,19 +1,43 @@
 {
-  "posts": [
+  "products": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+      "title": "Chaiks",
+      "description": "big",
+      "price": 123456789,
+      "id": 1
     }
   ],
-  "comments": [
+  "users": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "admin",
+      "password": "admin",
+      "id": 1
+    },
+    {
+      "name": "ded",
+      "password": "edede",
+      "id": 2
+    },
+    {
+      "name": "ss",
+      "password": "dddf",
+      "id": 3
+    },
+    {
+      "name": "ass",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "name": "123",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "name": "123",
+      "password": "123",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
