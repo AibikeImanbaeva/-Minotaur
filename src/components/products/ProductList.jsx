@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useProducts } from "../../contexts/ProductContextProvider";
 import ProductCard from "../products/ProductCard";
+import FilterProduct from "./FilterProduct";
 import { useSearchParams } from "react-router-dom";
 
 import { Pagination } from "@mui/material/Pagination";
@@ -42,7 +43,9 @@ const ProductList = () => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Search..."
-      />
+      /> <br /> <br />
+
+      <FilterProduct />
       {products ? (
         products.map((item) => <ProductCard key={item.id} item={item} />)
       ) : (

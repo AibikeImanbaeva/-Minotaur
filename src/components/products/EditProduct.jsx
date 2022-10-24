@@ -40,6 +40,7 @@ const EditProduct = () => {
           <input type="text" placeholder='Image' name='image' onChange={handleInp} /> <br />
     <input type="text" placeholder='Title' name='title' onChange={handleInp} /> <br />
     <input type="text" placeholder='Description' name='description' onChange={handleInp}/> <br />
+    <input type="text" placeholder='Type' name='type' onChange={handleInp}/> <br />
     <input type="text" placeholder='Price' name='price' onChange={handleInp} value={product.price}/> <br />
     
     <button
