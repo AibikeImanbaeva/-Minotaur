@@ -37,16 +37,16 @@ const EditProduct = () => {
     <>
       {product ? (
         <>
-          <input type="text" placeholder='Image' name='image' onChange={handleInp} /> <br />
-    <input type="text" placeholder='Title' name='title' onChange={handleInp} /> <br />
-    <input type="text" placeholder='Description' name='description' onChange={handleInp}/> <br />
-    <input type="text" placeholder='Type' name='type' onChange={handleInp}/> <br />
+          <input type="text" placeholder='Image' name='image' onChange={handleInp} value={product.image}/> <br />
+    <input type="text" placeholder='Title' name='title' onChange={handleInp} value={product.title}/> <br />
+    <input type="text" placeholder='Description' name='description' onChange={handleInp} value={product.description}/> <br />
+    <input type="text" placeholder='Type' name='type' onChange={handleInp} value={product.type}/> <br />
     <input type="text" placeholder='Price' name='price' onChange={handleInp} value={product.price}/> <br />
     
     <button
             onClick={() => {
               saveEditedProduct(product);
-              navigate("/products");
+              navigate("/catalog");
             }}
           >
             Save changes
