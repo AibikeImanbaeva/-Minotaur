@@ -68,12 +68,30 @@ const saveEditedProduct = async(newProduct) => {
   getProducts()
 }
 
+
+
+const fetchByParams = (query, value) => {
+  const search = new URLSearchParams(location.search);
+  if(value === 'all'){
+    search.delete(query)
+  }else {
+    search.set(query, value)
+  }
+
+  const url = `${location.pathname}?${search.toString()}`
+
+  navigate(url)
+}
+
+
+
   const value = {
     addProduct,
     getProducts,
     deleteProduct,
     getProductDetails,
     saveEditedProduct,
+    fetchByParams,
     products: state.products,
     productDetails: state.productDetails,
   };
