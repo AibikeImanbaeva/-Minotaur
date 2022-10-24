@@ -29,10 +29,10 @@ const AddProduct = () => {
   };
   return (
     <>
-         <input type="text" placeholder='Image' name='image' onChange={handleInp} /> <br />
-    <input type="text" placeholder='Title' name='title' onChange={handleInp} /> <br />
-    <input type="text" placeholder='Description' name='description' onChange={handleInp}/> <br />
-    <input type="text" placeholder='Price' name='price' onChange={handleInp} value={product.price}/> <br />
+         <input type="text" placeholder='Image' value={product.image} name='image' onChange={handleInp} /> <br />
+    <input type="text" placeholder='Title'  value={product.title} name='title' onChange={handleInp} /> <br />
+    <input type="text" placeholder='Description'  value={product.description}name='description' onChange={handleInp}/> <br />
+    <input type="text" placeholder='Price' value={product.price} name='price' onChange={handleInp} /> <br />
     
 <button onClick={()=>{addProduct(product)}}>Save Product</button>
     </>

@@ -14,6 +14,7 @@ import LoginPage from "./pages/LoginPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import RegistrationPage from "./pages/RegistrationPage";
+import GiftsPage from "./pages/GiftsPage";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -77,6 +78,11 @@ const MainRoutes = () => {
       element: <RegistrationPage />,
       id: 12,
     },
+    {
+      link: "/gifts",
+      element: <GiftsPage />,
+      id: 13,
+    }
   ];
 
   const PRIVATE_ROUTES = [

@@ -6,6 +6,13 @@
       "description": "big",
       "price": 123456789,
       "id": 1
+    },
+    {
+      "image": "ass",
+      "title": "ass",
+      "description": "ass",
+      "price": 888,
+      "id": 2
     }
   ],
   "users": [
