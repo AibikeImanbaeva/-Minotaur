@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext);
 
+
 const API = " http://localhost:8001/users";
 
 const AuthContextProvider = ({ children }) => {
@@ -61,6 +62,22 @@ const AuthContextProvider = ({ children }) => {
     }
     setAdminBtn(true)
   }
+
+
+  
+
+  
+  function logout(){
+    axios.delete("username");
+    axios.delete("admin")
+    setUser('')
+    navigate('/');
+  };
+
+  // async function checkAuth() {
+  //   await axios.delete(API,"username");
+  // }
+
   return (
     <authContext.Provider
       value={{
@@ -70,6 +87,7 @@ const AuthContextProvider = ({ children }) => {
         login,
         checkAuth,
         adminBtn,
+        logout,
       }}
     >
       {children}

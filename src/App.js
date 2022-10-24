@@ -4,10 +4,11 @@ import AuthContextProvider from "./contexts/AuthContextProvider";
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import ProductContextProvider from "./contexts/ProductContextProvider";
+import CartContextProvider from "./contexts/CartContextProvider";
 
 
 function App() {
-  return <>
+  return (<CartContextProvider>
   <ProductContextProvider>
   <AuthContextProvider>
   <Navbar />
@@ -18,7 +19,7 @@ function App() {
 
  
  
-  </>;
+  </CartContextProvider>);
 }
 
 export default App;

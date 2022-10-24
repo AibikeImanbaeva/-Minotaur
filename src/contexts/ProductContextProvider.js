@@ -64,7 +64,7 @@ const getProductDetails = async (id) => {
 
 
 const saveEditedProduct = async(newProduct) => {
-  await axios.patch(`${API_PRODUCTS}/${newProduct.id}, newProduct`)
+  await axios.patch(`${API_PRODUCTS}/${newProduct.id}`, newProduct)
   getProducts()
 }
 
