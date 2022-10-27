@@ -6,7 +6,7 @@ export const authContext = React.createContext();
 export const useAuth = () => useContext(authContext);
 
 
-const API = " http://localhost:8001/users";
+const API = " http://localhost:8000/users";
 
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");

@@ -5,16 +5,19 @@ import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import ProductContextProvider from "./contexts/ProductContextProvider";
 import CartContextProvider from "./contexts/CartContextProvider";
+import "./styles/Index.css";
 
 
 function App() {
   return (<CartContextProvider>
   <ProductContextProvider>
   <AuthContextProvider>
-  <Navbar />
+
   <MainRoutes />
-  <Footer />
+
+ 
   </AuthContextProvider>
+  <Footer />
   </ProductContextProvider>
 
  

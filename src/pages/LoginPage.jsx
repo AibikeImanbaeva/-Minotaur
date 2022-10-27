@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useAuth } from '../contexts/AuthContextProvider';
+import Navbar from '../components/Navbar/Navbar'
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -24,6 +25,7 @@ let newObj = {
 
   return (
     <>
+     <Navbar />
         <h2>login form</h2>
     <input type="text" placeholder='username' value={username} onChange={e=> setUsername(e.target.value)}/>
     <input type="text" placeholder='password' value={password} onChange={e=> setPassword(e.target.value)}/>

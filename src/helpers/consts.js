@@ -10,4 +10,4 @@ export const ACTIONS = {
   };
 
   
-export const API_PRODUCTS = "http://localhost:8001/products";
+export const API_PRODUCTS = "http://localhost:8000/products";

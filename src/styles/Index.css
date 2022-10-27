@@ -1,0 +1,50 @@
+
+.section_1 {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background: url("../img/HomePageImg/macarons-food.jpg");
+  background-position: center center 100% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.section_2 {
+    background: url("../img/HomePageImg/macaron-brown-chocolate.jpg");
+    background-position: center center 100% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+}
+  
+ .MuiBox-root {
+    justify-content: space-between;
+ }
+ .navIcon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ }
+
+.section_1__card img {
+    width: 250px;
+    height: 300px;
+    
+}
+
+.section_1__card{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.section_1__card card {
+  display: flex;
+  justify-self: center;
+}
