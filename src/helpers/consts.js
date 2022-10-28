@@ -9,5 +9,12 @@ export const ACTIONS = {
     GET_CART_LENGTH: "GET_CART_LENGTH",
   };
 
-  
+
+  export const BASKETS ={
+    GET_BASKETS: "GET_BASKETS",
+  }
+
+
+
+export const API_BASKETS =" http://localhost:8000/baskets";
 export const API_PRODUCTS = "http://localhost:8000/products";

@@ -7,6 +7,22 @@
       "type": "makarons",
       "price": 1000,
       "id": 2
+    },
+    {
+      "image": "wdede",
+      "title": "эклеры",
+      "description": "эклеры",
+      "type": "",
+      "price": 22,
+      "id": 3
+    },
+    {
+      "image": "ппп",
+      "title": "пп",
+      "description": "подарок",
+      "type": "giftbaskets",
+      "price": 200,
+      "id": 4
     }
   ],
   "users": [
@@ -49,6 +65,21 @@
       "name": "admin",
       "password": "admin",
       "id": 8
+    }
+  ],
+
+  "baskets": [
+    {
+      "image": "https://macaronika.ru/files/ones/shtrudel2.png",
+      "title":"пример",
+      "description": "примеррр",
+      "id":1
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb2lAkDKx8kml4ynB-i-wPtobPJ_837opFhy3cgntZ9KWDE4nAHdy-QLj836iHYUOTVg8&usqp=CAU",
+      "title":"пример2",
+      "description": "примеррр2",
+      "id":2
     }
   ]
 }

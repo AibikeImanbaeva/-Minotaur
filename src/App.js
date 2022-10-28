@@ -6,10 +6,15 @@ import Footer from "./components/Footer/Footer"
 import ProductContextProvider from "./contexts/ProductContextProvider";
 import CartContextProvider from "./contexts/CartContextProvider";
 import "./styles/Index.css";
+import BasketsContextProvider from "./contexts/BasketsContextProvider";
 
 
 function App() {
-  return (<CartContextProvider>
+  return (
+    <BasketsContextProvider>
+
+
+  <CartContextProvider>
   <ProductContextProvider>
   <AuthContextProvider>
 
@@ -22,7 +27,8 @@ function App() {
 
  
  
-  </CartContextProvider>);
+  </CartContextProvider>
+  </BasketsContextProvider>);
 }
 
 export default App;
