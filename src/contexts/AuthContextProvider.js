@@ -74,10 +74,6 @@ const AuthContextProvider = ({ children }) => {
     navigate('/');
   };
 
-  // async function checkAuth() {
-  //   await axios.delete(API,"username");
-  // }
-
   return (
     <authContext.Provider
       value={{
