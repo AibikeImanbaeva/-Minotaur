@@ -9,7 +9,7 @@
   background-position: center center 100% ;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 1000px;
 
 }
 .sec1_card {
@@ -55,7 +55,7 @@
 }
 
 .section_1__card{
-    width: 90vw;
+  
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -409,3 +409,6 @@ p{
 .row .col-1-of-3 {
   width: calc((100% - 2 * 6rem) / 3);
 }
+
+/* cart */
+

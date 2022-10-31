@@ -6,6 +6,7 @@ import Logo1 from "../img/HomePageImg/Logo1.png";
 import Macarons from "../img/HomePageImg/Macarons.jpg";
 import eclairs from "../img/HomePageImg/eclairs.jpg"
 import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 
 //custom
@@ -197,6 +198,7 @@ const HomePage = () => {
         <a href={'/catalog'} class="btn btn--green">Перейти к ассортименту</a>
       </div>
     </section>
+    <Footer />
     </>
   );
 };

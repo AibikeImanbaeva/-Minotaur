@@ -127,13 +127,26 @@ const CartContextProvider = ({ children }) => {
       payload: cart,
     });
   }
+  function checkProductInCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart"));
 
+    if (cart) {
+      let newCart = cart.products.filter((elem) => elem.item.id === id);
+      return newCart.length > 0 ? true : false;
+    } else {
+      cart = {
+        product: [],
+        totalPrice: 0,
+      };
+    }
+  }
   const values = {
     cart: state.cart,
     getCart,
     addProductToCart,
     changeProductCount,
     deleteProductInCart,
+    checkProductInCart
   };
 
   return <cartContext.Provider value={values}>{children}</cartContext.Provider>;

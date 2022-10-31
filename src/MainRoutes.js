@@ -15,6 +15,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import GiftsPage from "./pages/GiftsPage";
+import Pay from "./pages/Pay";
 
 const MainRoutes = () => {
   const PUBLIC_ROUTES = [
@@ -81,6 +82,11 @@ const MainRoutes = () => {
     {
       link: "/gifts",
       element: <GiftsPage />,
+      id: 13,
+    },
+    {
+      link: "/Pay",
+      element: <Pay />,
       id: 13,
     }
   ];
