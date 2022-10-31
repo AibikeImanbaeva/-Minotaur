@@ -88,7 +88,7 @@ const MainRoutes = () => {
       link: "/Pay",
       element: <Pay />,
       id: 13,
-    }
+    },
   ];
 
   const PRIVATE_ROUTES = [
@@ -103,18 +103,17 @@ const MainRoutes = () => {
       id: 2,
     },
   ];
-  
 
   return (
     <Routes>
       {PUBLIC_ROUTES.map((item) => (
         <Route path={item.link} element={item.element} key={item.id} />
       ))}
-      {PRIVATE_ROUTES.map((item)=>(
+      {PRIVATE_ROUTES.map((item) => (
         <Route path={item.link} element={item.element} key={item.id} />
       ))}
     </Routes>
   );
-}
+};
 
 export default MainRoutes;
